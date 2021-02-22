@@ -1,0 +1,14 @@
+language: scala
+
+scala:
+  - 2.11.12
+dist: trusty
+arch:
+  - amd64
+  - arm64-graviton2
+virt: lxd
+group: edge
+jdk:
+  - openjdk8
+script:
+  - ./build/mvn -DskipTests clean package
