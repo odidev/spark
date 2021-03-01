@@ -12,4 +12,4 @@ group: edge
 jdk:
   - openjdk8
 script:
-  - ./build/mvn -DskipTests clean package
+  - sudo ./build/mvn -DskipTests clean package
