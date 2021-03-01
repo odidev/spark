@@ -168,7 +168,7 @@ MVN_RETCODE=$?
 
 # Try to shut down zinc explicitly if the server is still running.
 #if [ "$(uname -m)" != 'aarch64' ]; then
-"${ZINC_BIN}" -shutdown -port ${ZINC_PORT}
+#"${ZINC_BIN}" -shutdown -port ${ZINC_PORT}
 #fi
 
 exit $MVN_RETCODE
