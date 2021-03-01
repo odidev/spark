@@ -4,7 +4,7 @@ scala:
 arch:
   - amd64
   - arm64-graviton2
-dist: trusty
+dist: focal
 virt: lxd
 group: edge
 jdk:
