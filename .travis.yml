@@ -1,6 +1,8 @@
 language: scala
 scala:
   - 2.11.12
+maven:
+  - 3.6.3
 arch:
   - amd64
   - arm64-graviton2
@@ -10,10 +12,5 @@ group: edge
 jdk:
   - openjdk8
 script:
-  - cd /opt
-  - wget https://mirrors.estointernet.in/apache/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
-  - tar -xvf apache-maven-3.6.3-bin.tar.gz
-  - export PATH=$PATH:/opt/apache-maven-3*/bin
   - mvn -v
-  - cd -
   - mvn -DskipTests clean package
