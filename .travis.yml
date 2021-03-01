@@ -10,6 +10,6 @@ group: edge
 jdk:
   - openjdk8
 script:
-  - apt-get install -y maven
+  - sudo apt-get install -y maven
   - mvn -v
   - mvn -DskipTests clean package
