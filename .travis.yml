@@ -1,7 +1,6 @@
 language: scala
 scala:
   - 2.11.12
-dist: trusty
 arch:
   - amd64
   - arm64-graviton2
